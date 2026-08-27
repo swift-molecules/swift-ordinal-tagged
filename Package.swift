@@ -18,7 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-ordinal.git",
+            url: "https://github.com/swift-atoms/swift-ordinal.git",
             branch: "main"
         ),
         .package(
@@ -37,6 +37,10 @@ let package = Package(
             url: "https://github.com/swift-atoms/swift-tagged.git",
             branch: "main"
         ),
+        .package(
+            url: "https://github.com/swift-molecules/swift-ordinal-property.git",
+            branch: "main"
+        ),
     ],
     targets: [
         .target(
@@ -44,6 +48,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Ordinal", package: "swift-ordinal"),
                 .product(name: "Ordinal Cardinal", package: "swift-ordinal-cardinal"),
+                .product(name: "Ordinal Property", package: "swift-ordinal-property"),
                 .product(name: "Cardinal", package: "swift-cardinal"),
                 .product(name: "Cardinal Standard Library Integration", package: "swift-cardinal"),
                 .product(name: "Property", package: "swift-property"),
@@ -55,6 +60,8 @@ let package = Package(
             dependencies: [
                 "Ordinal Tagged",
                 .product(name: "Ordinal", package: "swift-ordinal"),
+                .product(name: "Ordinal Cardinal", package: "swift-ordinal-cardinal"),
+                .product(name: "Ordinal Property", package: "swift-ordinal-property"),
                 .product(name: "Cardinal", package: "swift-cardinal"),
                 .product(name: "Tagged", package: "swift-tagged"),
             ]

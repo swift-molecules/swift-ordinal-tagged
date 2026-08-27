@@ -1,16 +1,6 @@
-public import Cardinal_Standard_Library_Integration
-public import Tagged
-
-extension UnsafeMutableBufferPointer where Element: ~Copyable {
-
-    @inlinable
-    public init(
-        start: UnsafeMutablePointer<Element>?,
-        count: Tagged<Element, Ordinal>.Count
-    ) {
-        unsafe self.init(start: start, count: Int(bitPattern: count.underlying))
-    }
-}
+public import Ordinal_Cardinal
+public import struct Ordinal.Ordinal
+public import struct Tagged.Tagged
 
 extension UnsafeMutableBufferPointer {
 

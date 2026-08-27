@@ -1,6 +1,8 @@
 public import Cardinal_Standard_Library_Integration
-public import Property
-public import Tagged
+public import Ordinal_Cardinal
+public import struct Ordinal.Ordinal
+public import struct Property.Property
+public import struct Tagged.Tagged
 
 extension UnsafeMutablePointer where Pointee: ~Copyable {
 
@@ -10,12 +12,12 @@ extension UnsafeMutablePointer where Pointee: ~Copyable {
 extension UnsafeMutablePointer where Pointee: ~Copyable {
 
     @inlinable
-    public var move: Property.Property<Move, Self> {
-        unsafe Property.Property(self)
+    public var move: Property<Move, Self> {
+        unsafe Property(self)
     }
 }
 
-extension Property.Property {
+extension Property {
 
     @inlinable
     public func initialize<Pointee: ~Copyable>(

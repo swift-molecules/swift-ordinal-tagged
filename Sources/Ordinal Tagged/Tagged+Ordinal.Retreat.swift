@@ -1,7 +1,8 @@
 public import Cardinal
-public import Ordinal
+public import Ordinal_Property
+public import struct Ordinal.Ordinal
 public import Property
-public import Tagged
+public import struct Tagged.Tagged
 
 extension Tagged where Underlying == Ordinal, Tag: ~Copyable & ~Escapable {
 

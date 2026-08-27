@@ -1,7 +1,8 @@
 public import Cardinal
 public import Cardinal_Standard_Library_Integration
-public import Ordinal
-public import Tagged
+public import Ordinal_Cardinal
+public import struct Ordinal.Ordinal
+public import struct Tagged.Tagged
 
 extension Array {
 
