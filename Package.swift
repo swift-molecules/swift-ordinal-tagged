@@ -18,27 +18,27 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-atoms/swift-ordinal.git",
+            url: "https://github.com/swift-atoms/swift-ordinal",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-ordinal-cardinal.git",
+            url: "https://github.com/swift-molecules/swift-ordinal-cardinal",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-atoms/swift-cardinal.git",
+            url: "https://github.com/swift-atoms/swift-cardinal",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-atoms/swift-property.git",
+            url: "https://github.com/swift-atoms/swift-property",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-atoms/swift-tagged.git",
+            url: "https://github.com/swift-atoms/swift-tagged",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-ordinal-property.git",
+            url: "https://github.com/swift-molecules/swift-ordinal-property",
             branch: "main"
         ),
     ],
